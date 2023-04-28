@@ -1,0 +1,360 @@
+// Project portfolio page common elements
+.page-project {
+  .page-wrapper-24 {
+    padding: 0 var(--standard-section-padding);
+  }
+
+  .page-wrapper-64 {
+    padding: 0 64px;
+  }
+
+  .project-page-wrapper {
+    padding: 0 80px;
+   
+    @media screen and (min-width: 1800px) {
+      padding: 0 128px;
+    }
+    
+    @media screen and (max-width: 1200px) {
+      padding: 0 24px;
+    }
+
+    @media screen and (max-width: 600px) {
+      padding: 0 16px;
+    }
+  }
+
+  .sticky-scroll {
+    position: sticky;
+    top: 96px;
+
+    @media screen and (max-width: 1200px) {
+      position: relative;
+      top: 0px;
+    }
+  }
+
+  .insert-image {
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    // background-attachment: fixed;
+
+    img {
+      // width: auto;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    @media screen and (max-width: 1200px) {
+      height: 60vh;
+    }
+  }
+
+  // Top intro area
+  .intro {
+    &-image {
+      width: 100%;
+      height: 85vh;
+      background-color: #eee;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: transform 200ms linear;
+      // background-attachment: fixed;
+
+
+      @media screen and (max-width: 600px) {
+       
+      }
+      
+      @media screen and (max-width: 1200px) {
+        height: 60vh;
+      }
+    }
+  }
+
+  .project-info {
+    margin-top: 128px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include reg20;
+
+    .project {
+      &-title {
+        @include med96;
+      }
+      
+      &-subtitle {
+        @include med96;
+        margin-bottom: 128px;
+      }
+
+      &-desc {
+        max-width: 720px;
+        p {
+          margin-bottom: 32px;
+        }
+      }
+
+      &-area {
+        margin-top: 96px;
+        margin-bottom: 160px;
+
+        &-heading {
+          @include med20;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: 1fr;
+      margin-top: 96px;
+
+      .project {
+        &-subtitle {
+          margin-bottom: 96px;
+        }
+
+        &-desc {
+          max-width: 100%;
+        }
+
+        &-area {
+          margin-top: 64px;
+          margin-bottom: 128px;
+
+          &-heading {
+            @include med18;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      @include reg18;
+      
+      .project {
+        &-title, &-subtitle {
+          @include med64;
+          line-height: 64px;
+        }
+      }
+    }
+    
+    
+  }
+
+  .section {
+    margin: 128px 0px;
+
+    @media screen and (max-width: 1200px) {
+      margin: 96px 0px;
+    }
+
+    &-heading { 
+      margin-bottom: 20px;
+
+      &-24 {
+        @extend .section-heading;
+        @include med24;
+      }
+
+      &-40 {
+        @extend .section-heading;
+        @include med40;
+
+        @media screen and (max-width: 600px) {
+          @include med24;
+          margin-bottom: 12px;
+        }
+      }
+
+      &-48 {
+        @extend .section-heading;
+        @include med48;
+
+        @media screen and (max-width: 600px) {
+          @include med40;
+          margin-bottom: 16px;
+        }
+      }
+      
+      &-64 {
+        @extend .section-heading;
+        @include med64;
+
+        @media screen and (max-width: 600px) {
+          @include med48;
+
+        }
+      }
+    }
+
+    &-desc {
+      @include reg20;
+      width: 33%;
+      margin-bottom: 24px;
+
+      @media screen and (max-width: 1200px) {
+        width: 100% !important;
+        @include reg18;
+      }
+
+      @media screen and (max-width: 600px) {
+        margin-bottom: 16px;
+      }
+    }
+
+    &-scrolling-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+
+      .section-info-container {
+        width: 80%;
+
+        .section-desc {
+          width: 100%;
+        }
+      }
+
+      .gallery-container {
+        grid-column: span 2;
+      }
+
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr;
+
+        .section-info-container {
+          width: 100%;
+        }
+      }
+    }
+
+    .gallery {
+      margin-bottom: var(--gallery-grid-gap);
+
+      img {
+        border-radius: 20px;
+
+        @media screen and (max-width: 600px) {
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+
+  .next-project {
+    display: block;
+    padding: var(--standard-section-padding);
+    @include reg24;
+    position: relative;
+    overflow: hidden;
+
+    min-height: 600px;
+    // aspect-ratio: 4/1;
+
+    @media screen and (max-width: 600px) {
+      min-height: 460px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    .project-cover {
+      width: 100%;
+      height: 100%;
+      @include absolute(top 0px left 0px);
+      color: $white;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: transform 200ms linear;
+    }
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+
+      .project-cover {
+        transform: scale(1.02);
+      }
+      
+    }
+
+    h6 {
+      position: relative;
+      text-transform: uppercase;
+      z-index: 2;
+    }
+
+    p {
+      position: relative;
+      @include med24;
+      z-index: 2;
+
+      @media screen and (max-width: 600px) {
+        font-size: 20px;
+      }
+    }
+
+    &-selz {
+      color: $white !important;
+      .project-cover {
+        background-image: url('../../../public/projects/selz/selz-cover.jpg');
+        ;
+
+        @media screen and (max-width: 600px) {
+          background-size: auto 100%;
+        }
+      }
+    }
+
+    &-selz-dm .project-cover {
+      background-image: url('../../../public/projects/selz-dm/selz-dm-cover.jpg');
+      background-size: auto 130%;
+      background-color: #E9EBE1;
+
+      @media screen and (max-width: 600px) {
+        background-size: auto 80%;
+      }
+    }
+
+    &-selz-spc .project-cover {
+      background-image: url('../../../public/projects/selz-spc/selz-spc-cover.jpg');
+      background-size: auto 120%;
+      background-color: #ECE7EF;
+
+      @media screen and (max-width: 600px) {
+        background-size: auto 90%;
+      }
+    }
+
+    &-brickx .project-cover {
+      background-image: url('../../../public/projects/brickx/brickx-cover.jpg');
+    }
+
+    &-telstra .project-cover {
+      background-image: url('../../../public/projects/telstra/telstra-cover.jpg');
+      background-size: auto 110%;
+      background-color: #ABC1D9;
+    }
+
+    &-anz .project-cover {
+      background-image: url('../../../public/projects/anz/anz-cover.jpg');
+      background-size: auto 110%;
+      background-color: #C5EDFC;
+
+      @media screen and (max-width: 600px) {
+        background-size: auto 90%;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+:root {
+  --standard-section-padding: 1.5rem;
+  
+  // mobile size
+  @media screen and (max-width: 600px) {
+    --standard-section-padding: 1rem;
+  }
+}
+
+$standard-section-padding: var(--standard-section-padding);
+$image-grid-gap: 1rem;

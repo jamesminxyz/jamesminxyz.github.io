@@ -1,0 +1,32 @@
+.site-header {
+  @include reg24;
+  width: 100%;
+  padding: $standard-section-padding;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 99999999;
+  position: fixed;
+  color: $white;
+
+
+  @media screen and (max-width: 600px) {
+    @include reg20;
+    padding: 16px;
+  }
+
+  .nav-links {
+    display: flex;
+
+    .link {
+      margin: 0 24px;
+
+      @media screen and (max-width: 1200px) {
+        margin-right: 0px;
+        margin-left: 32px;
+      }
+    }
+  }
+}

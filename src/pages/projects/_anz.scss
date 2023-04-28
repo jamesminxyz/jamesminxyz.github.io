@@ -1,0 +1,51 @@
+// ANZ project page
+.page-anz {
+  .intro-image {
+    background-image: url('../../../public/projects/anz/anz-cover.jpg');
+    background-size: auto 100%;
+    background-color: #C5EDFC;
+
+    @media screen and (max-width: 600px) {
+      background-size: auto 90%;
+    }
+  }
+
+  .project-info {
+    .project-title {
+      color: #0080FF;
+    }
+  }
+
+  .insert-image {
+    &-brick {
+      background-image: url('../../../public/projects/anz/anz-insert-brick-square.jpg');
+      background-size: auto 100%;
+      background-color: #0472E6;
+
+      @media screen and (max-width: 600px) {
+        background-size: auto 80%;
+      }
+    }
+
+    &-heart {
+      background-image: url('../../../public/projects/anz/anz-insert-heart-square.jpg');
+      background-size: auto 100%;
+      background-color: #FFDCDA;
+    }
+
+    &-pet {
+      background-image: url('../../../public/projects/anz/anz-insert-pet-square.jpg');
+      background-size: auto 100%;
+      background-color: #CDECE6;
+    }
+  }
+
+  .section {
+    &-heading-48 {
+      margin-bottom: 48px;
+    }
+    &-desc {
+      width: 33%;
+    }
+  }
+}

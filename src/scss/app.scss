@@ -1,0 +1,27 @@
+// Utils
+// @import 'utils/normalize';
+@import 'utils/reset';
+@import 'utils/mixins';
+@import 'utils/variables';
+
+
+// Base styles
+@import 'base/colors';
+@import 'base/typography';
+@import 'base/global';
+
+// Pages
+@import '../pages/index.scss';
+@import '../pages/about.scss';
+@import '../pages/projects/projects.scss';
+@import '../pages/projects/project-page.scss';
+@import '../pages/projects/selz.scss';
+@import '../pages/projects/brickx.scss';
+@import '../pages/projects/telstra.scss';
+@import '../pages/projects/selz-spc.scss';
+@import '../pages/projects/selz-dm.scss';
+@import '../pages/projects/anz.scss';
+
+// Components
+@import '../components/Header.scss';
+@import '../components/Footer.scss';

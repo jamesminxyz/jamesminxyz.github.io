@@ -1,0 +1,24 @@
+// Selz SPC project page
+.page-selz-spc {
+  .intro-image {
+    background-image: url('../../../public/projects/selz-spc/selz-spc-cover.jpg');
+    background-size: auto 110%;
+    background-color: #ECE7EF;
+
+    @media screen and (max-width: 600px) {
+      background-size: auto 90%;
+    }
+  }
+
+  .project-info {
+    .project-title {
+      color: #8D45E6;
+    }
+  }
+
+  .section {
+    &-desc {
+      width: 50%;
+    }
+  }
+}

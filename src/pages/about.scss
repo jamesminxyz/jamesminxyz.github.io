@@ -1,0 +1,105 @@
+.page-about {
+  @include reg24;
+  padding: 0;
+
+  .page-intro {
+    padding: 224px $standard-section-padding 192px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+
+    .heading {
+      @include med96;
+    }
+
+    .about-content {
+      max-width: 840px;
+
+      p {
+        line-height: 1.45;
+        margin-top: 16px;
+        margin-bottom: 64px;
+      }
+    }
+  }
+
+  .section {
+    @extend .page-intro;
+    border-top: 1px solid #ddd;
+    padding: 64px $standard-section-padding 192px;
+
+    .heading {
+      @include med24;
+      text-transform: uppercase;
+      letter-spacing: 0px;
+    }
+
+    .skills-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      p {
+        margin-bottom: 4px;
+      }
+    }
+
+    .contact-content {
+      a {
+        display: block;
+        margin-bottom: 4px;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // tablet
+  @media screen and (max-width: 1200px) {
+    .page-intro {
+      grid-template-columns: 1fr;
+      padding-top: 128px;
+      padding-bottom: 96px;
+
+      .heading {
+        margin-bottom: 32px;
+      }
+
+      .about-content {
+        max-width: 100%;
+        p { margin-bottom: 48px;}
+      }
+    }
+  }
+
+  // mobile phone
+  @media screen and (max-width: 600px) {
+    @include reg20;
+
+    .page-intro {
+      padding: 128px var(--standard-section-padding);
+      .heading {
+        @include med64;
+        margin-bottom: 24px;
+      }
+    }
+
+    .section {
+      padding: 24px 16px 96px;
+
+      .heading {
+        @include med20;
+      }
+
+      .skills-content {
+        // grid-template-columns: 1fr;
+
+        p { margin-bottom: 0; }
+      }
+
+      .contact-content {
+        a { margin-bottom: 0; }
+      }
+    }
+  }
+
+  
+}

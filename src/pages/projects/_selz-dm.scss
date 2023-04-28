@@ -1,0 +1,174 @@
+// Selz digital marketing project page
+.page-selz-dm {
+  .intro-image {
+    background-image: url('../../../public/projects/selz-dm/selz-dm-cover.jpg');
+    background-size: auto 115%;
+    background-color: #E9EBE1;
+    
+    @media screen and (max-width: 600px) {
+      background-size: auto 80%;
+    }
+  }
+
+  .project-info {
+    .project-title {
+      color: #8D45E6;
+    }
+  }
+
+  .insert-image {
+    &-landing-page {
+      background-image: url('../../../public/projects/selz-dm/landing-page-video-2.jpg');
+      background-color: #23282F;
+      background-size: auto 100%;
+
+      @media screen and (max-width: 600px) {
+        background-size: auto 80%;
+      }
+    }
+
+    &-motion {
+      background-image: url('../../../public/projects/selz-dm/motion/selz-motion-cover.jpg');
+      background-color: #FFDCDA;
+
+      @media screen and (max-width: 600px) {
+        height: 35vh;
+      }
+    }
+
+    &-3d-illust {
+      background-image: url('../../../public/projects/selz-dm/3d/3d-illust-cover.jpg');
+      background-color: #eee;
+    }
+  }
+
+
+
+  .section {
+    img {
+      border-radius: 0px !important; 
+    }
+
+    &-digital-marketing-campaign {
+      .section-nav-container {
+        @include reg24;
+
+        a {
+          opacity: 0.5;
+          display: block;
+          margin-bottom: 4px;
+
+          &:hover {
+            opacity: 1;
+            text-decoration: underline;
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          display: none;
+        }        
+      }
+
+      .gallery-container {
+        .gallery {
+          margin-bottom: 128px;
+
+          &:last-child {
+            margin-bottom: unset;
+          }
+        }
+
+        p {
+          text-transform: uppercase;
+          @include med20;
+          // margin-bottom: 8px;
+        }
+
+        .spacer {
+          height: 64px;
+        }
+      }
+    }
+
+    &-motion-design-process {
+      p:first-child {
+        text-transform: uppercase; 
+        margin-bottom: 16px;
+        @include med20;
+      }
+
+      .grid-col-3 {
+        img {
+          border: 1px solid #ddd;
+        }
+      }
+    }
+
+    &-3d-illust {
+      .illust-1 {
+        width: 60%;
+      }
+
+      .illust-2 {
+        width: 50% !important;
+        padding-left: 16px;
+        padding-top: 16px;
+      }
+
+      .illust-3 {
+        width: 50% !important;
+        margin-top: -192px; 
+        padding-right: 16px;
+      }
+
+      .illust-4 {
+        width: 60% !important;
+        padding-left: 16px;
+        padding-top: 16px;
+      }
+
+      .illust-5 {
+        width: 60% !important;
+        height: auto;
+        padding-top: 16px;
+      }
+
+      .illust-6 {
+        width: 25% !important;
+        height: 25% !important;
+        padding-left: 32px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .gallery {
+          display: block;
+        }
+        .illust-1, .illust-2, .illust-3, .illust-4, .illust-5, .illust-6 {
+          width: 100% !important; 
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .animation-video-container {
+    position: relative;
+    @include box(100%, 0px);
+    padding-bottom: 56.27198%;
+   
+    iframe {
+        @include absolute(top 0 left 0);
+        @include box(100%, 100%);
+        border: 0;
+
+        .ytp-title {
+            display: none;
+        }
+
+        #player {
+            display: none;
+        }
+    }
+  }
+}

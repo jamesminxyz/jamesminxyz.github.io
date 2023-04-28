@@ -1,0 +1,28 @@
+@include fontface('Regular', '../../../public/fonts/regular.woff', 'woff');
+@include fontface('Medium', '../../../public/fonts/medium.woff', 'woff');
+
+
+$freg: 'Regular', sans-serif;
+$fmed: 'Medium', sans-serif;
+
+
+// Regular
+@mixin reg16 { font: 16px/21px $freg; }
+@mixin reg18 { font: 18px/26px $freg; }
+@mixin reg20 { font: 20px/28px $freg; }
+@mixin reg24 { font: 24px/30px $freg; }
+@mixin reg40 { font: 40px/44px $freg; }
+@mixin reg48 { font: 48px/52px $freg; }
+
+// Medium
+@mixin med18 { font: 18px/26px $fmed; }
+@mixin med20 { font: 20px/28px $fmed; }
+@mixin med24 { font: 24px/30px $fmed; }
+@mixin med40 { font: 40px/50px $fmed; }
+@mixin med48 { font: 48px/48px $fmed; }
+@mixin med64 { font: 64px/74px $fmed; }
+@mixin med96 {
+  font: 96px/96px $fmed;
+  letter-spacing: -1.5px;
+}
+

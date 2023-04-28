@@ -1,0 +1,38 @@
+.site-footer {
+  @include reg24;
+  position: relative;
+  min-height: 480px;
+  background-color: $black;
+  color: $white;
+  padding: var(--standard-section-padding);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+
+  @media screen and (max-width: 600px) {
+    @include reg20;
+    grid-template-columns: 1fr;
+    min-height: auto;
+
+    p { margin-bottom: 48px; }
+    nav { margin-bottom: 200px; }
+  }
+
+  .nav-links {
+    a {
+      display: block;
+      margin-bottom: 4px;
+      color: $white;
+    }
+  }
+
+  // .site-footer-logo {
+  //   @include absolute(bottom 24px left 24px);
+  //   img { width: 32px; }
+
+  //   @media screen and (max-width: 600px) {
+  //     @include absolute(bottom 16px left 16px);
+  //     img { width: 28px; }  
+  //   }
+  // }
+}

@@ -1,0 +1,63 @@
+// Selz project page
+.page-selz {
+  .intro-image {
+    background-image: url('../../../public/projects/selz/selz-cover.jpg');
+    //background-size: auto 115%;
+    background-color: #E9EBE1;
+  }
+
+  .project-info {
+    .project-title {
+      color: #8D45E6;
+    }
+  }
+
+  .insert-image {
+    &-selz-logo {
+      background-color: #E6E9EE;
+    }
+    
+    &-homepage-mockup {
+      background-image: url('../../../public/projects/selz/selz-insert-1.jpg');
+    }
+
+    &-feature-page-mockup {
+      background-image: url('../../../public/projects/selz/selz-insert-1.jpg');
+    }
+
+    &-pricing-mockup {
+      background-image: url('../../../public/projects/selz/selz-insert-2.jpg');
+    }
+  }
+
+  .section {
+    &-logo, &-logomark, &-color, &-website, &-website-feature {
+      img {
+        border-radius: 0px !important; 
+      }
+    }
+
+    &-website-feature {
+      .gallery-container {
+
+        p {
+          text-transform: uppercase;
+          @include med20;
+
+          @media screen and (max-width: 600px) {
+            font-size: 18px;
+          }
+        }
+
+        .spacer {
+          height: 64px;
+        }
+      }
+    }
+  }
+
+  .website-desktop {
+    border: 1px solid #ddd;
+    border-radius: 0px !important;
+  }
+}
