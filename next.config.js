@@ -5,7 +5,7 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  distDir: 'docs',
+  distDir: 'dist',
   // assetPrefix: './'
   // basePath: '/jamesminxyz.github.io',
 }
