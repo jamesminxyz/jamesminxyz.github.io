@@ -1,0 +1,28 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"hero_text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Non eiusmod ex est cillum ullamco laboris duis culpa. Cillum id exercitation ex in ut ex.",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 54,
+									"end": 89
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

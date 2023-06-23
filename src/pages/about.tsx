@@ -30,10 +30,10 @@ const Page: NextPageWithLayout = () => {
             <p>Redshift</p>
           </div>
           <div className="skills">
-            {/* <p>Front-End Web Dev</p> */}
+            <p>Web Development</p>
             <p>HTML</p>
-            <p>CSS</p>
-            <p>SASS</p>
+            <p>CSS / SASS</p>
+            {/* <p>SASS</p> */}
             <p>JavaScript</p>
             <p>TypeScript</p>
             <p>React.js</p>
@@ -48,7 +48,7 @@ const Page: NextPageWithLayout = () => {
         <h2 className="heading">Contact</h2>
         <div className="contact-content">
           <a href="mailto:jamesminxyz@gmail.com"> Email  </a>
-          <a className="no-fade-link" href="https://www.linkedin.com/in/jamesminxyz/" target="_blank"> LinkedIn  </a>
+          {/* <a className="no-fade-link" href="https://www.linkedin.com/in/jamesminxyz/" target="_blank"> LinkedIn  </a> */}
           <a className="no-fade-link" href="https://www.behance.com/jamesminxyz/" target="_blank"> Behance  </a>
         </div>
       </section>

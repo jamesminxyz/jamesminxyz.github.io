@@ -10,7 +10,7 @@ const Page: NextPageWithLayout = () => {
   return (
     <div className="page page-home">
       <section className="intro">
-        <p>Designer & developer with experience in visual design, web design & development, crafting visually compelling and functional solutions.</p>
+        <p>James Min is a multidisciplinary designer and developer working in visual design, web design and development and 3D design.</p>
       </section>
 
       <section className="featured-projects">
